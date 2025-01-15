@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Project ARK</title>
+    <!-- icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-touch-icon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="./icon/favicon-16x16.ico">
+    <link rel="manifest" href="./icon/site.webmanifest">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <style>
+            .dropdown-menu {
+                padding: 10px;
+                font-size: 14px;
+                color: #777;
+                border: 1px solid #efefef;
+                box-shadow: 0 4px 24px rgba(0, 0, 0, .1);
+            }
+            
+            .dropdown-item {
+                padding: 6px 10px;
+                font-weight: 600;
+                color: #777;
+                border-radius: 8px;
+            }
+            
+            .dropdown-item i {
+                display: inline-block;
+                width: 25px;
+            }
+            
+            .dropdown-item.active,
+            .dropdown-item:active {
+                background-color: #f8f9fa;
+                color: #16181b;
+            }
+            
+        </style>
+       <header>
+        <a href="/Project Ark/V2/ProjectArk/index.html" class="logo"><img src="./img/logo.png" alt="logos" width="80" height="80"></a>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+        <ul style="font-size: 17px;">
+            <li class="nav-item">
+                <a class="nav-link1" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link1" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link1" href="#">Contact</a>
+            </li>
+            <li class="nav-item dropdown" onclick="toggleDropdown()">
+                <a class="nav-link1 dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                    <i class="fas fa-user"></i>
+                 </a>
+                <ul class="dropdown-menu" id="myDropdown">
+                  <li><a class="dropdown-item" href="./register/register.html">Be a part of ARK</a></li>
+                  <li><a class="dropdown-item" href="./login/login.html">Login</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+       </header>
+       <div>
+
+        <!-- Carousel -->
+            <div class="wrapper">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+            <div class="carous">
+                <div class="carousel">
+                    <div class="img-top">
+                    <img class="img-hov" src="images/img-1.png" alt="img" draggable="false">
+                    <img class="img-hov" src="images/img-2.png" alt="img" draggable="false">
+                    <img class="img-hov" src="images/img-3.png" alt="img" draggable="false">
+                    <img class="img-hov" src="images/img-4.png" alt="img" draggable="false">
+                    <img class="img-hov" src="images/img-5.png" alt="img" draggable="false">
+                    <img class="img-hov" src="images/img-6.jpg" alt="img" draggable="false">
+                    <img class="img-hov" src="images/img-7.jpg" alt="img" draggable="false">
+                    <img class="img-hov" src="images/img-8.jpg" alt="img" draggable="false">
+                    <img class="img-hov" src="images/img-9.jpg" alt="img" draggable="false">
+                    </div>
+                </div>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+            </div>
+            </div>
+
+            <!-- Categories -->
+            <div class="scrollable-tabs-container">
+            <div class="left-arrow">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5L8.25 12l7.5-7.5"
+                />
+              </svg>
+            </div>
+      
+            <ul>
+              <li>
+                <a href="#" class="active">All Channels</a>
+              </li>
+      
+              <li>
+                <a href="#">Site Plan</a>
+              </li>
+      
+              <li>
+                <a href="#">Floor Plans</a>
+              </li>
+      
+              <li>
+                <a href="#">Elevations</a>
+              </li>
+      
+              <li>
+                <a href="#">Sections</a>
+              </li>
+      
+              <li>
+                <a href="#">Details</a>
+              </li>
+      
+              <li>
+                <a href="#">Renderings</a>
+              </li>
+      
+              <li>
+                <a href="#">Site Sections and Plans</a>
+              </li>
+      
+              <li>
+                <a href="#">Schedules</a>
+              </li>
+      
+              <li>
+                <a href="#">Mechanical and Electrical Plans</a>
+              </li>
+      
+              <li>
+                <a href="#">Furniture and Interior Design Plans</a>
+              </li>
+      
+              <li>
+                <a href="#">Construction and Structural Drawings</a>
+              </li>
+      
+              <li>
+                <a href="#">Landscape and Outdoor Plans</a>
+              </li>
+              <li>
+                <a href="#">Roof Plans</a>
+              </li>
+              <li>
+                <a href="#">Fire Safety and Life Safety Plans</a>
+              </li>
+              <li>
+                <a href="#">Foundation Plans</a>
+              </li>
+              <li>
+                <a href="#">Plumbing Plans</a>
+              </li>
+              <li>
+                <a href="#">Electrical Plans</a>
+              </li>
+              <li>
+                <a href="#">Accessibility Plans</a>
+              </li>
+              <li>
+                <a href="#">Finish Schedules</a>
+              </li>
+              <li>
+                <a href="#">Conceptual Sketches</a>
+              </li>
+              <li>
+                <a href="#">As-Built Drawings</a>
+              </li>
+              <li>
+                <a href="#">Shop Drawings</a>
+              </li>
+              <li>
+                <a href="#">Photographic Plates</a>
+              </li>
+              <li>
+                <a href="#">Environmental and Sustainability Plates</a>
+              </li>
+            </ul>
+      
+            <div class="right-arrow active">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </div>
+            </div>
+        </div>
+
+        <!--ROW IMAGES-->
+        <div><h1 class="chanel"><b>All Channels</b></h1></div>
+        <!-- images -->
+        <div class="container1">
+            <!--image row 1 start-->
+            <div class="row">
+              <!--image card start-->
+              <div class="image">
+                <img src="./images/gallery grid/1.jpg" alt="">
+                <div class="details">
+                  <div class="more">
+                    <a href="#" class="read-more"><i class="fa-solid fa-feather"></i> <span>@miggy.pyols</span></a>
+                    <div class="icon-links">
+                      <a href="#"><i class="fa-regular fa-heart"></i></a>
+                      <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                      <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--image card end-->
+              <!--image card start-->
+              <div class="image">
+                <img src="./images/gallery grid/2.jpg" alt="">
+                <div class="details">
+                  <div class="more">
+                    <a href="#" class="read-more"><i class="fa-solid fa-feather"></i> <span>@niksuu_art</span></a>
+                    <div class="icon-links">
+                      <a href="#"><i class="fa-regular fa-heart"></i></a>
+                      <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                      <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--image card end-->
+              <!--image card start-->
+              <div class="image">
+                <img src="./images/gallery grid/3.jpg" alt="">
+                <div class="details">
+                  <div class="more">
+                    <a href="#" class="read-more"><i class="fa-solid fa-feather"></i> <span>@niksuu_art</span></a>
+                    <div class="icon-links">
+                      <a href="#"><i class="fa-regular fa-heart"></i></a>
+                      <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                      <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--image card end-->
+              <!--image card start-->
+              <div class="image">
+                <img src="./images/gallery grid/4.jpg" alt="">
+                <div class="details">
+                  <div class="more">
+                    <a href="#" class="read-more"><i class="fa-solid fa-feather"></i> <span>@niksuu_art</span></a>
+                    <div class="icon-links">
+                      <a href="#"><i class="fa-regular fa-heart"></i></a>
+                      <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                      <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--image card end-->
+              <!--image card start-->
+              <div class="image">
+                <img src="./images/gallery grid/5.jpg" alt="">
+                <div class="details">
+                  <div class="more">
+                    <a href="#" class="read-more"><i class="fa-solid fa-feather"></i> <span>@niksuu_art</span></a>
+                    <div class="icon-links">
+                      <a href="#"><i class="fa-regular fa-heart"></i></a>
+                      <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                      <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--image card end-->
+            </div>
+            <!--image row 1 end-->
+
+            <!--image row 2 start-->
+            <div class="row">
+              <!--image card start-->
+              <div class="image">
+                <img src="./images/gallery grid/6.jpg" alt="">
+                <div class="details">
+                  <div class="more">
+                    <a href="#" class="read-more"><i class="fa-solid fa-feather"></i> <span>@niksuu_art</span></a>
+                    <div class="icon-links">
+                      <a href="#"><i class="fa-regular fa-heart"></i></a>
+                      <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                      <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--image card end-->
+              <!--image card start-->
+              <div class="image">
+                <img src="./images/gallery grid/7.jpg" alt="">
+                <div class="details">
+                  <div class="more">
+                    <a href="#" class="read-more"><i class="fa-solid fa-feather"></i> <span>@niksuu_art</span></a>
+                    <div class="icon-links">
+                      <a href="#"><i class="fa-regular fa-heart"></i></a>
+                      <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                      <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--image card end-->
+              <!--image card start-->
+              <div class="image">
+                <img src="./images/gallery grid/8.jpg" alt="">
+                <div class="details">
+                  <div class="more">
+                    <a href="#" class="read-more"><i class="fa-solid fa-feather"></i> <span>@niksuu_art</span></a>
+                    <div class="icon-links">
+                      <a href="#"><i class="fa-regular fa-heart"></i></a>
+                      <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                      <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--image card end-->
+              <!--image card start-->
+              <div class="image">
+                <img src="./images/gallery grid/9.jpg" alt="">
+                <div class="details">
+                  <div class="more">
+                    <a href="#" class="read-more"><i class="fa-solid fa-feather"></i> <span>@jessie</span></a>
+                    <div class="icon-links">
+                      <a href="#"><i class="fa-regular fa-heart"></i></a>
+                      <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                      <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--image card end-->
+              <!--image card start-->
+              <div class="image">
+                <img src="./images/gallery grid/10.jpg" alt="">
+                <div class="details">
+                  <div class="more">
+                    <a href="#" class="read-more"><i class="fa-solid fa-feather"></i> <span>@jessie</span></a>
+                    <div class="icon-links">
+                      <a href="#"><i class="fa-regular fa-heart"></i></a>
+                      <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                      <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--image card end-->
+            </div>
+            <!--image row 2 end-->
+
+            <!--image row 3 start-->
+            <div class="row">
+              <!--image card start-->
+              <div class="image">
+                <img src="./images/gallery grid/11.jpg" alt="">
+                <div class="details">
+                  <div class="more">
+                    <a href="#" class="read-more"><i class="fa-solid fa-feather"></i> <span>@jessie</span></a>
+                    <div class="icon-links">
+                      <a href="#"><i class="fa-regular fa-heart"></i></a>
+                      <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                      <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--image card end-->
+              <!--image card start-->
+              <div class="image">
+                <img src="./images/gallery grid/12.jpg" alt="">
+                <div class="details">
+                  <div class="more">
+                    <a href="#" class="read-more"><i class="fa-solid fa-feather"></i> <span>@jessie</span></a>
+                    <div class="icon-links">
+                      <a href="#"><i class="fa-regular fa-heart"></i></a>
+                      <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                      <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--image card end-->
+              <!--image card start-->
+              <div class="image">
+                <img src="./images/gallery grid/13.jpg" alt="">
+                <div class="details">
+                  <div class="more">
+                    <a href="#" class="read-more"><i class="fa-solid fa-feather"></i> <span>@jessie</span></a>
+                    <div class="icon-links">
+                      <a href="#"><i class="fa-regular fa-heart"></i></a>
+                      <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                      <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--image card end-->
+              <!--image card start-->
+              <div class="image">
+                <img src="./images/gallery grid/14.jpg" alt="">
+                <div class="details">
+                  <div class="more">
+                    <a href="#" class="read-more"><i class="fa-solid fa-feather"></i> <span>@aewonmark</span></a>
+                    <div class="icon-links">
+                      <a href="#"><i class="fa-regular fa-heart"></i></a>
+                      <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                      <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--image card end-->
+              <!--image card start-->
+              <div class="image">
+                <img src="./images/gallery grid/15.jpg" alt="">
+                <div class="details">
+                  <div class="more">
+                    <a href="#" class="read-more"><i class="fa-solid fa-feather"></i> <span>@aewonmark</span></a>
+                    <div class="icon-links">
+                      <a href="#"><i class="fa-regular fa-heart"></i></a>
+                      <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                      <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--image card end-->
+            </div>
+            <!--image row 3 end-->
+
+            <!--image row 4 start-->
+            <div class="row">
+              <!--image card start-->
+              <div class="image">
+                <img src="./images/gallery grid/16.jpg" alt="">
+                <div class="details">
+                  <div class="more">
+                    <a href="#" class="read-more"><i class="fa-solid fa-feather"></i> <span>@aewonmark</span></a>
+                    <div class="icon-links">
+                      <a href="#"><i class="fa-regular fa-heart"></i></a>
+                      <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                      <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--image card end-->
+              <!--image card start-->
+              <div class="image">
+                <img src="./images/gallery grid/17.jpg" alt="">
+                <div class="details">
+                  <div class="more">
+                    <a href="#" class="read-more"><i class="fa-solid fa-feather"></i> <span>@niksuu_art</span></a>
+                    <div class="icon-links">
+                      <a href="#"><i class="fa-regular fa-heart"></i></a>
+                      <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                      <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--image card end-->
+              <!--image card start-->
+              <div class="image">
+                <img src="./images/gallery grid/18.jpg" alt="">
+                <div class="details">
+                  <div class="more">
+                    <a href="#" class="read-more"><i class="fa-solid fa-feather"></i> <span>@rmx_arts</span></a>
+                    <div class="icon-links">
+                      <a href="#"><i class="fa-regular fa-heart"></i></a>
+                      <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                      <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--image card end-->
+              <!--image card start-->
+              <div class="image">
+                <img src="./images/gallery grid/19.jpg" alt="">
+                <div class="details">
+                  <div class="more">
+                    <a href="#" class="read-more"><i class="fa-solid fa-feather"></i> <span>@rmx_arts</span></a>
+                    <div class="icon-links">
+                      <a href="#"><i class="fa-regular fa-heart"></i></a>
+                      <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                      <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--image card end-->
+              <!--image card start-->
+              <div class="image">
+                <img src="./images/gallery grid/20.jpg" alt="">
+                <div class="details">
+                  <div class="more">
+                    <a href="#" class="read-more"><i class="fa-solid fa-feather"></i> <span>@rmx_arts</span></a>
+                    <div class="icon-links">
+                      <a href="#"><i class="fa-regular fa-heart"></i></a>
+                      <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                      <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--image card end-->
+            </div>
+            <!--image row 4 end-->
+
+            <!--image row 5 start-->
+            <div class="row">
+              <!--image card start-->
+              <div class="image">
+                <img src="./images/gallery grid/21.jpg" alt="">
+                <div class="details">
+                  <div class="more">
+                    <a href="#" class="read-more"><i class="fa-solid fa-feather"></i> <span>@rmx_arts</span></a>
+                    <div class="icon-links">
+                      <a href="#"><i class="fa-regular fa-heart"></i></a>
+                      <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                      <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--image card end-->
+              <!--image card start-->
+              <div class="image">
+                <img src="./images/gallery grid/22.jpg" alt="">
+                <div class="details">
+                  <div class="more">
+                    <a href="#" class="read-more"><i class="fa-solid fa-feather"></i> <span>@rmx_arts</span></a>
+                    <div class="icon-links">
+                      <a href="#"><i class="fa-regular fa-heart"></i></a>
+                      <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                      <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--image card end-->
+              <!--image card start-->
+              <div class="image">
+                <img src="./images/gallery grid/23.jpg" alt="">
+                <div class="details">
+                  <div class="more">
+                    <a href="#" class="read-more"><i class="fa-solid fa-feather"></i> <span>@rmx_arts</span></a>
+                    <div class="icon-links">
+                      <a href="#"><i class="fa-regular fa-heart"></i></a>
+                      <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                      <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--image card end-->
+              <!--image card start-->
+              <div class="image">
+                <img src="./images/gallery grid/24.jpg" alt="">
+                <div class="details">
+                  <div class="more">
+                    <a href="#" class="read-more"><i class="fa-solid fa-feather"></i> <span>@rmx_arts</span></a>
+                    <div class="icon-links">
+                      <a href="#"><i class="fa-regular fa-heart"></i></a>
+                      <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                      <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--image card end-->
+              <!--image card start-->
+              <div class="image">
+                <img src="./images/gallery grid/25.jpg" alt="">
+                <div class="details">
+                  <div class="more">
+                    <a href="#" class="read-more"><i class="fa-solid fa-feather"></i> <span>@rmx_arts</span></a>
+                    <div class="icon-links">
+                      <a href="#"><i class="fa-regular fa-heart"></i></a>
+                      <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                      <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--image card end-->
+            </div>
+            <!--image row 5 end-->
+
+            <!--image row 6 start-->
+            <div class="row">
+              <!--image card start-->
+              <div class="image">
+                <img src="./images/gallery grid/36.png" alt="">
+                <div class="details">
+                  <div class="more">
+                    <a href="#" class="read-more"><i class="fa-solid fa-feather"></i> <span>@arzabal</span></a>
+                    <div class="icon-links">
+                      <a href="#"><i class="fa-regular fa-heart"></i></a>
+                      <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                      <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--image card end-->
+              <!--image card start-->
+              <div class="image">
+                <img src="./images/gallery grid/27.png" alt="">
+                <div class="details">
+                  <div class="more">
+                    <a href="#" class="read-more"><i class="fa-solid fa-feather"></i> <span>@arzabal</span></a>
+                    <div class="icon-links">
+                      <a href="#"><i class="fa-regular fa-heart"></i></a>
+                      <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                      <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--image card end-->
+              <!--image card start-->
+              <div class="image">
+                <img src="./images/gallery grid/28.png" alt="">
+                <div class="details">
+                  <div class="more">
+                    <a href="#" class="read-more"><i class="fa-solid fa-feather"></i> <span>@arzabal</span></a>
+                    <div class="icon-links">
+                      <a href="#"><i class="fa-regular fa-heart"></i></a>
+                      <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                      <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--image card end-->
+              <!--image card start-->
+              <div class="image">
+                <img src="./images/gallery grid/29.jpg" alt="">
+                <div class="details">
+                  <div class="more">
+                    <a href="#" class="read-more"><i class="fa-solid fa-feather"></i> <span>@arzabal</span></a>
+                    <div class="icon-links">
+                      <a href="#"><i class="fa-regular fa-heart"></i></a>
+                      <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                      <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--image card end-->
+              <!--image card start-->
+              <div class="image">
+                <img src="./images/gallery grid/30.jpg" alt="">
+                <div class="details">
+                  <div class="more">
+                    <a href="#" class="read-more"><i class="fa-solid fa-feather"></i> <span>@arzabal</span></a>
+                    <div class="icon-links">
+                      <a href="#"><i class="fa-regular fa-heart"></i></a>
+                      <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                      <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--image card end-->
+            </div>
+            <!--image row 6 end-->
+
+            <!--image row 7 start-->
+            <div class="row">
+              <!--image card start-->
+              <div class="image">
+                <img src="./images/gallery grid/31.jpg" alt="">
+                <div class="details">
+                  <div class="more">
+                    <a href="#" class="read-more"><i class="fa-solid fa-feather"></i> <span>@arzabal</span></a>
+                    <div class="icon-links">
+                      <a href="#"><i class="fa-regular fa-heart"></i></a>
+                      <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                      <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--image card end-->
+              <!--image card start-->
+              <div class="image">
+                <img src="./images/gallery grid/32.jpg" alt="">
+                <div class="details">
+                  <div class="more">
+                    <a href="#" class="read-more"><i class="fa-solid fa-feather"></i> <span>@arzabal</span></a>
+                    <div class="icon-links">
+                      <a href="#"><i class="fa-regular fa-heart"></i></a>
+                      <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                      <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--image card end-->
+              <!--image card start-->
+              <div class="image">
+                <img src="./images/gallery grid/33.jpg" alt="">
+                <div class="details">
+                  <div class="more">
+                    <a href="#" class="read-more"><i class="fa-solid fa-feather"></i> <span>@arzabal</span></a>
+                    <div class="icon-links">
+                      <a href="#"><i class="fa-regular fa-heart"></i></a>
+                      <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                      <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--image card end-->
+              <!--image card start-->
+              <div class="image">
+                <img src="./images/gallery grid/34.png" alt="">
+                <div class="details">
+                  <div class="more">
+                    <a href="#" class="read-more"><i class="fa-solid fa-feather"></i> <span>@arzabal</span></a>
+                    <div class="icon-links">
+                      <a href="#"><i class="fa-regular fa-heart"></i></a>
+                      <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                      <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--image card end-->
+              <!--image card start-->
+              <div class="image">
+                <img src="./images/gallery grid/35.png" alt="">
+                <div class="details">
+                  <div class="more">
+                    <a href="#" class="read-more"><i class="fa-solid fa-feather"></i> <span>@arzabal</span></a>
+                    <div class="icon-links">
+                      <a href="#"><i class="fa-regular fa-heart"></i></a>
+                      <a href="#"><i class="fa-regular fa-bookmark"></i></a>
+                      <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--image card end-->
+            </div>
+            <!--image row 7 end-->
+          </div>
+
+          <div class="next-page">
+            <div class="next">
+                <h5>Next   <i class="fa-solid fa-chevron-right"></i></h5>
+            </div>
+          </div>
+
+        <footer role="contentinfo">
+            <div class="container">
+                <div class="row">
+                      <div class="col" id="company">
+                          <img src="img/logo.png" alt="" class="logo">
+                          <p>
+                            Elevate your architecture student journey with <b>Project ARK</b> – a simple yet potent platform to showcase your work, gain recognition from industry influencers, and light the path to your future success in the architecture world.
+                          </p>
+                          <div class="social">
+                            <a href="#"><i class="fa-brands fa-github"></i></i></a>
+                            <a href="#"><i class="fa-brands fa-discord"></i></a>
+                            <a href="#"><i class="fa-brands fa-html5"></i></a>
+                            <a href="#"><i class="fa-brands fa-css3-alt"></i></a>
+                            <a href="#"><i class="fa-brands fa-square-js"></i></a>
+                          </div>
+                      </div>
+    
+    
+                      <div class="col" id="services">
+                         <h3>Links</h3>
+                         <div class="links">
+                            <a href="#">Terms of Service</a>
+                            <a href="#">Privacy Policy</a>
+                            <a href="./team/team.html">Team</a>
+                         </div>
+                      </div>
+    
+                      <div class="col" id="useful-links">
+                         <h3>Help</h3>
+                         <div class="links">
+                            <a href="#">Account</a>
+                            <a href="#">Profile</a>
+                            <a href="#">Portfolio</a>
+                            <a href="#">General</a>
+                         </div>
+                      </div>
+    
+                      <div class="col" id="contact">
+                          <h3>Contact</h3>
+                          <div class="contact-details">
+                             <i class="fa fa-location"></i>
+                             <p>SLU Mary Heights <br> Volleyball Court</p>
+                          </div>
+                          <div class="contact-details">
+                             <i class="fa fa-phone"></i>
+                             <p>09954367030</p>
+                          </div>
+                      </div>
+                </div>
+    
+                <div class="row">
+                      <div class="form">
+                        <form action="">
+                            <input type="text" placeholder="Support...">
+                            <button><i class="fa fa-paper-plane"></i></button>
+                        </form>
+                      </div>
+                </div>
+                <div>
+                  <ul class="footer-list footer-list-secondary">
+                    <li>© 2023 Project Ark, Inc.</li>
+                    <li style="color: #5d5d6c;">|</li>
+                    <li>All rights reserved</li>
+                  </ul>
+                </div>
+            </div>
+         </footer>
+    </body>
+    <script>
+        var expanded = false;
+
+        function showCheckboxes() {
+          var myDropdown = document.getElementById("myDropdown");
+          if (!expanded) {
+            myDropdown.style.display = "block";
+            expanded = true;
+          } else {
+            myDropdown.style.display = "none";
+            expanded = false;
+          }
+        }
+
+        /*Hamburger*/
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function() {
+            navBar = document.querySelector(".nav-bar")
+            navBar.classList.toggle("active")
+        }
+        /*Sticky Nav*/
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+        <script src="carousel.js"></script>
+        <script src="allchannels.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>
